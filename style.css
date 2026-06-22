@@ -13,37 +13,56 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 20px;
 }
 
 .hero h1 {
-  font-size: 60px;
+  font-size: 64px;
+  margin: 0;
 }
 
 .hero p {
   color: #aaa;
-  margin-top: -10px;
+  font-size: 18px;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 25px;
 }
 
 .buttons a {
   margin: 10px;
-  padding: 10px 20px;
+  padding: 12px 22px;
   background: #1e90ff;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background: #0d6efd;
+  transform: translateY(-2px);
 }
 
 /* SECTIONS */
 section {
-  padding: 60px;
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-h2 {
+/* ABOUT */
+.about p {
+  color: #bbb;
+  line-height: 1.6;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-/* PROJECT CARDS */
+/* PROJECTS */
 .projects {
   text-align: center;
 }
@@ -52,11 +71,12 @@ h2 {
   background: #141a2a;
   padding: 20px;
   margin: 20px auto;
-  width: 60%;
+  width: 80%;
   border-radius: 10px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  background: #1a2238;
 }
